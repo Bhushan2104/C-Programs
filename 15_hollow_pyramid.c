@@ -16,20 +16,20 @@ int main()
             printf(" ");
         }
 
-        // Print stars and inner spaces
-        for (int j = 1; j <= i; j++)
+        // Loop through all positions in the current row
+        for (int j = 1; j <= (2 * i - 1); j++)
         {
             // Print star at:
             // 1. First position
-            // 2. Last position of the row
-            // 3. Last row
-            if (j == 1 || j == i || i == n)
+            // 2. Last position
+            // 3. Every position in the last row
+            if (j == 1 || j == (2 * i - 1) || i == n)
             {
-                printf("* ");
+                printf("*");
             }
             else
             {
-                printf("  ");
+                printf(" ");
             }
         }
 
